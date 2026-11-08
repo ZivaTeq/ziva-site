@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ziva: payments, rides and deliveries in one app</title>
+<meta name="description" content="Ziva is an everyday app from Cameroon: pay bills and airtime, book rides, order food, send parcels and money, and get a virtual phone number.">
+<link rel="icon" href="assets/logo.svg">
+<style>
+  :root { --deep:#0B3D2A; --gold:#F4B41A; --clay:#E4573D; --bg:#F6F1E7; --ink:#14201A; --ink2:#4A5750; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0E1512; --ink:#EEF2EF; --ink2:#AEBBB3; --card:#17211C; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:22px; color:var(--ink); text-decoration:none; }
+  .brand img { width:36px; height:36px; }
+  .btn { display:inline-block; padding:12px 20px; border-radius:14px; font-weight:800; text-decoration:none; }
+  .btn.gold { background:var(--gold); color:#2A1E00; }
+  .btn.green { background:var(--deep); color:#fff; }
+  .btn.ghost { color:#fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.35); }
+  .hero { background: radial-gradient(120% 90% at 100% 0%, #13573C 0%, var(--deep) 55%, #072117 100%); color:#fff; border-radius:28px; padding:40px 24px; margin:8px 0 32px; }
+  .hero h1 { font-size: clamp(30px, 6vw, 48px); line-height:1.08; letter-spacing:-.02em; margin:0 0 14px; max-width:14em; }
+  .hero p { color: rgba(255,255,255,.85); font-size:17px; max-width:34em; margin:0 0 22px; }
+  .cta { display:flex; flex-wrap:wrap; gap:10px; }
+  h2 { font-size: clamp(22px, 4vw, 30px); margin: 0 0 14px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin-bottom:36px; }
+  .card { background:var(--card); border-radius:18px; padding:18px; box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 6px 20px rgba(0,0,0,.05); }
+  .card h3 { margin:0 0 4px; font-size:17px; }
+  .card p { margin:0; color:var(--ink2); font-size:15px; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--clay); margin-right:8px; }
+  .shot { width:100%; border-radius:18px; box-shadow: 0 10px 30px rgba(0,0,0,.15); margin-bottom:36px; }
+  footer { background:var(--deep); color:rgba(255,255,255,.8); padding:26px 0; margin-top:20px; }
+  footer a { color:#fff; font-weight:700; margin-right:16px; text-decoration:none; }
+  footer p { margin:12px 0 0; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="https://ziva.cm"><img src="assets/logo.svg" alt="">Ziva</a>
+    <a class="btn green" href="https://ziva.cm">Open Ziva</a>
+  </header>
+
+  <section class="hero">
+    <h1>One app for paying, getting around and getting things delivered</h1>
+    <p>Pay bills and buy airtime, book a moto-taxi or a taxi, order food, send parcels and money: all in one place, on any phone.</p>
+    <div class="cta">
+      <a class="btn gold" href="https://ziva.cm/#/register">Create a free account</a>
+      <a class="btn ghost" href="https://ziva.cm/contact">Contact us</a>
+    </div>
+  </section>
+
+  <h2>What you can do with Ziva</h2>
+  <div class="grid">
+    <div class="card"><h3><span class="dot"></span>Rides</h3><p>Moto-taxis and taxis at a price fixed before you go, with the driver on the map.</p></div>
+    <div class="card"><h3><span class="dot"></span>Food</h3><p>Meals from restaurants near you, delivered by Ziva couriers.</p></div>
+    <div class="card"><h3><span class="dot"></span>Parcels</h3><p>Send a parcel across town; it's handed over only with the recipient's code.</p></div>
+    <div class="card"><h3><span class="dot"></span>Bills and airtime</h3><p>Electricity, water, TV and airtime, paid in seconds.</p></div>
+    <div class="card"><h3><span class="dot"></span>Send money</h3><p>Send money to anyone on Ziva instantly.</p></div>
+    <div class="card"><h3><span class="dot"></span>Virtual numbers</h3><p>A US or Canadian phone number to receive SMS and calls.</p></div>
+  </div>
+
+
+  <h2>Work with Ziva</h2>
+  <div class="grid">
+    <div class="card"><h3>Drivers and couriers</h3><p>Earn with your moto, taxi, car or bicycle. <a href="https://ziva.cm/driver">Become a driver or courier</a>.</p></div>
+    <div class="card"><h3>Restaurants</h3><p>Receive orders on your phone or tablet; Ziva couriers deliver. <a href="https://ziva.cm/restaurant">Register your restaurant</a>.</p></div>
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <a href="https://ziva.cm/terms">Terms</a><a href="https://ziva.cm/privacy">Privacy</a><a href="https://ziva.cm/refunds">Refunds</a><a href="https://ziva.cm/contact">Contact</a>
+    <p>© Ziva Tech · Douala, Cameroon</p>
+  </div>
+</footer>
+</body>
+</html>
